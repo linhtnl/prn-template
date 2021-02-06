@@ -8,17 +8,22 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
-
+    <title>PhotoWork</title>
+    <link rel="shortcut icon" type="image/png" href="img/photo-work.png">
+    <script src="vendor/jquery/jquery.min.js "></script>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="vendor/owlcarousel/owl.carousel.min.js"></script>
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -34,15 +39,55 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" href="#">Đăng kí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log In</a>
+                        <a class="nav-link" href="#">Đăng nhập</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <!--Category Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top flex-navbar" style="margin-top: 67px; border-bottom: 2px solid lightgray;visibility: hidden;">
+        <div class="container">
+            <div class="row" style="color: black; width: 100%;">
+                <div class="col-md-4">
+                    <div class="dropdown" style="margin-left: 30%;">
+                        <button class="dropbtn">Chụp ảnh</button>
+                        <div class="dropdown-content">
+                            <a href="#">Ngoại cảnh</a>
+                            <a href="#">Studio</a>
+                            <a href="#">Sự kiện/ hội nghị</a>
+                            <a href="#">Nhóm</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dropdown" style="margin-left: 30%;">
+                        <button class="dropbtn">Quay phim</button>
+                        <div class="dropdown-content">
+                            <a href="#">Studio</a>
+                            <a href="#">Ngoại cảnh</a>
+                            <a href="#">Sự kiện/ hội nghị</a>
+                            <a href="#">Theo ngày</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dropdown" style="margin-left: 30%;">
+                        <button class="dropbtn">Chỉnh sửa</button>
+                        <div class="dropdown-content">
+                            <a href="#">Ảnh</a>
+                            <a href="#">Video/ clip</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </nav>
+
+
     <!-- PROJECT LOGO AND INTRODUCE-->
     <header class="masthead text-center text-white">
         <div class="masthead-content">
@@ -56,47 +101,48 @@
         <div class="bg-circle-3 bg-circle"></div>
         <div class="bg-circle-4 bg-circle"></div>
     </header>
+    <div style="background-color: #f0ecdf; height: 50px;"></div><br> >
     <!--TOP 6 PHOTOGRAPHERS HAVE MOST GREAT FEEDBACK-->
-    <div style="background-color: #f0ecdf; height: 50px;"></div><br>
+
     <div class="container">
         <h2 class="display-4">Top Photographers Nổi Bật</h2><br>
-        <div class="row">
-            <div class="col-md-4 col-sm-6">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
                 <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title mb-0">Tran Van Hoi</h5>
                     <div class="card-text text-black-50">Mình sẽ giúp bạn chỉnh sửa ảnh.</div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="item">
                 <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title mb-0">Nguyen H Nam</h5>
                     <div class="card-text text-black-50">Hi! Mình chuyên về chụp hình ngoại cảnh.</div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="item">
                 <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title mb-0">Tran Xuan My</h5>
                     <div class="card-text text-black-50">Nếu cần quay phim, hãy liên hệ mình nhé!</div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="item">
                 <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title mb-0">La Xuan Oai</h5>
                     <div class="card-text text-black-50">Mình sẽ giúp cho những bức hình của bạn trở nên tuyệt vời.</div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="item">
                 <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title mb-0">Le Van Luyen</h5>
                     <div class="card-text text-black-50">Chụp ảnh kỷ yếu đi nào các bé ơi!</div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="item">
                 <img src="https://source.unsplash.com/TMgQMXoglsM/500x350" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5 class="card-title mb-0">Pham Cong Thanh</h5>
@@ -104,22 +150,29 @@
                 </div>
             </div>
         </div>
+    </div>
     </div><br>
     <!--CATEGORY PLACE-->
     <div class="container" style="padding-bottom:5% ;">
         <h2 class="display-4 ">Explore the marketplace.</h2><br>
-        <div class="row ">
-            <div class="col ">
+        <div class="row categoryText" style="padding: 1% 15%;">
+            <div class="col">
+                <button type="button" class="btn btn-link" style="color: black; text-decoration: none;"> 
                 <img src="img/photo-camera-interface-symbol-for-button.svg" style="height: 40px; width: 40px; margin-left: 6%;">
                 <h5>Chụp ảnh</h5>
+              </button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-link" style="color: black; text-decoration: none;"> 
+                    <img src="img/video-camera.svg" style="height: 40px; width: 40px; margin-left: 8%;">
+                    <h5 >Quay phim</h5>
+                  </button>
             </div>
             <div class="col ">
-                <img src="img/video-camera.svg" style="height: 40px; width: 40px; margin-left: 8%;">
-                <h5>Quay phim</h5>
-            </div>
-            <div class="col ">
+                <button type="button" class="btn btn-link" style="color: black; text-decoration: none;"> 
                 <img src="img/edit.svg" style="height: 40px; width: 40px; margin-left: 7%;">
                 <h5>Chỉnh sửa</h5>
+              </button>
             </div>
 
         </div>
@@ -127,7 +180,6 @@
     <!--ABOUT US-->
     <div style="background-color:#f2f6fc;height: 28%;">
         <div class="row" style="padding: 7%;">
-
             <div class=" col-md-5" style="padding-right: 2%;">
                 <h2>Chém gió xíu! Nơi để đa cấp web của tui.</h2><br>
                 <h4><i class="fa fa-check-circle-o"></i> Lợi ích 1</h4>
@@ -159,7 +211,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 ">
                     <div class="p-5 ">
-                        <h2 class="display-4 ">For those about to rock...</h2>
+                        <h2 class="display-4 ">Tuyệt vời bạn ui!</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
                         </p>
                     </div>
@@ -177,7 +229,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="p-5">
-                        <h2 class="display-4">We salute you!</h2>
+                        <h2 class="display-4">Cho shop 5 sao luôn nè.</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.
                         </p>
                     </div>
@@ -197,7 +249,7 @@
     </footer>
 </body>
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js "></script>
+
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
 
 <script>
@@ -206,11 +258,40 @@
             var pos_body = $('html,body').scrollTop();
             if (pos_body > 414) {
                 //Hiện ra menu category
-                console.log('ok');
+                document.querySelectorAll('.flex-navbar')[0].
+                style.visibility = 'visible';
+                //Đổi màu nền
+                document.querySelectorAll('.flex-navbar')[0].
+                style.backgroundColor = 'white';
+                //Đổi màu nền cho Main Nav-Bar
+                document.querySelectorAll('.navbar-custom')[0].
+                style.backgroundColor = 'black';
             } else {
                 //Cất menu
+                document.querySelectorAll('.flex-navbar')[0].
+                style.visibility = 'hidden';
+                document.querySelectorAll('.navbar-custom')[0].
+                style.backgroundColor = 'rgba(0, 0, 0, .7)';
             }
 
+        });
+
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
         });
 
     });
