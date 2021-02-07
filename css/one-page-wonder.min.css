@@ -204,3 +204,16 @@ header.masthead .bg-circle-4 {
 .dropdown:hover .dropbtn {
     background-color: rgb(245, 217, 166);
 }
+
+.or-container {
+    align-items: center;
+    color: black;
+    display: flex;
+    margin: 25px 5px
+}
+
+.line-separator {
+    background-color: #ccc;
+    flex-grow: 5;
+    height: 1px
+}
